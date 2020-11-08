@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>uk map</title>
+  <link rel="stylesheet" href="css/uk.css"/>
+  <link rel="stylesheet" href="plug/layui/css/layui.css">
+</head>
+<body>
+<h1 style="text-align: center;margin: 10px 0">Drag the slider to reload towns</h1>
+<div id="slider" style="margin: 10px auto;width: 960px"></div>
+<script type="text/javascript" src="plug/layui/layui.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/topojson.min.js"></script>
+<script type="text/javascript" src="js/uk.js"></script>
+<script type="text/javascript" src="js/draw.js"></script>
+<script type="text/javascript" src="js/json2geojson.js"></script>
+<script type="text/javascript" src="js/enhance.js"></script>
+<script>
+  console.log(topojson.feature(ukJson, ukJson.objects.places));
+</script>
+</body>
+</html>
